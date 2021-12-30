@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sixing property</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        #div {
+            box-sizing: border-box;
+            width: 20rem;
+            border: 2rem solid red;
+            /* border-top-style: ridge;
+            border-right-style: ridge;
+            border-bottom-style: inset;
+            border-left-style: groove; */
+            margin: 2rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div">
+        hi this is for test of <em>box-sizing</em> property
+    </div>
+</body>
+
+</html>

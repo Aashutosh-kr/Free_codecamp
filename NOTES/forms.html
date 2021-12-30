@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <input type="text" placeholder="cat photo URL">
+        <br>
+        <fieldset>
+            <legend>Select the type of game your cat likes :-- </legend>
+            <label for="indoor">
+        <input value="indoor" type="radio"  name="indoor-outdoor" id="indoor">indoor
+    </label>
+            <label for="outdoor">
+        <input value="" type="radio"  name="indoor-outdoor" id="outdoor">outdoor
+    </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Types of Cat you Own :-- </legend>
+            <label for="loving">
+        <input id="loving" value="" type="checkbox"  name="personality"> Loving</label>
+            <label for="lazy">
+        <input id="lazy" value="" type="checkbox"  name="personality"> Lazy</label>
+            <label for="energetic">
+        <input id="energetic" value="" type="checkbox"  name="personality"> Energetic</label>
+            <br>
+            <br>
+            <input type="text" placeholder="cat photo URL" required>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
