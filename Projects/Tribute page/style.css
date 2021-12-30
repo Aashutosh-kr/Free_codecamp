@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header */
+
+#title {
+    text-align: center;
+}
+
+
+/* #image {} */
+
+
+/* Utility classes */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+
+/* header::before {
+    content: url();
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+} */

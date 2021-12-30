@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="title">
+            <em>Realme 5i</em> user response/feedback Form
+        </h1>
+        <p id="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsam, reiciendis recusandae officia beatae accusamus est at laborum provident excepturi a consectetur, autem praesentium obcaecati? Vel esse quia odio obcaecati?
+        </p>
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label">Name : 
+            <input id="name" type="text" placeholder="Name" required>
+            </label>
+            <br>
+            <br>
+            <label for="email" id="email-label">Email : 
+            <input id="email" type="email" placeholder="Email" required>
+            </label>
+            <br>
+            <br>
+            <label for="number" id="number-label">Number : 
+            <input id="number" min="10" max="99"  type="number" placeholder="Number">
+            </label>
+            <br>
+            <br>
+            <label for="dropdown">Year in which you bought it : 
+            <select name="" id="dropdown">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
+            </label>
+            <br>
+            <br> Year in which you bought it :
+            <label for="hi">hi
+                <input type="radio" name="year" id="hi" value="hi">
+            </label>
+            <label for="hola">hola
+                <input type="radio" name="year" id="hola" value="hola">
+                </label>
+            <label for="ni hao">ni hao
+                <input type="radio" name="year" id="ni hao" value="ni hao">
+            </label>
+            <br>
+            <br>
+            <label for="">
+            <input type="checkbox" value="a"> a
+            </label>
+            <label for="">
+            <input type="checkbox" value="b"> b
+            </label>
+            <label for="">
+            <input type="checkbox" value="c"> c
+            </label>
+            <label for="">
+            <input type="checkbox" value="d"> d
+            </label>
+            <label for="">
+            <input type="checkbox" value="e"> e
+            </label>
+            <br>
+            <br>
+            <label for="feedback">Write your feedback here : 
+            <textarea name="feedback" id="feedback" cols="20" rows="4"></textarea></label>
+            <br>
+            <br>
+            <input id="submit" type="Submit">
+            <br>
+        </form>
+    </main>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

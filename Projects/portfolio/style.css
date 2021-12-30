@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+header {
+    height: 100vmin;
+}
+
+h1,
+h2,
+header,
+footer {
+    text-align: center;
+}
+
+#navbar {
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vmin;
+    width: 15rem;
+    background: url("../../img/bg2.jpg") center center/cover, url("../../img/bg\ patterns.jpg") center center/cover;
+}
+
+#navbar ul {
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li {
+    background-color: lightgrey;
+    border: 2px solid red;
+    border-radius: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.4rem 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 1.06rem;
+    padding: 1rem;
+}
+
+.links {
+    height: 5rem;
+    width: 8rem;
+}
+
+main {
+    margin-left: 15rem;
+    padding: 1.2rem;
+}
+
+#about {
+    height: 100vmin;
+}
+
+#projects {
+    height: 100vmin;
+}
+
+#contacts {
+    height: 50vmin;
+}
+
+footer {
+    margin-left: 15rem;
+    padding: 1.2rem;
+}
+
+
+/* utility classes */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-direction: column;
+}
