@@ -8,14 +8,38 @@
 /* header */
 
 header {
-    height: 100vmin;
+    min-height: 100vh;
+    padding: 1.2rem 0;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
 }
 
-h1,
-h2,
-header,
-footer {
-    text-align: center;
+header h1 {
+    font-size: 2.8rem;
+    margin: .3rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin: .3rem;
+}
+
+header::before {
+    content: "";
+    top: 0;
+    left: 0;
+    background: url("../../img/bg\ patterns.jpg") center center/cover;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+header>img {
+    min-height: 34rem;
+    width: 25rem;
 }
 
 #navbar {
@@ -23,24 +47,27 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vmin;
+    min-height: 100vh;
     width: 15rem;
-    background: url("../../img/bg2.jpg") center center/cover, url("../../img/bg\ patterns.jpg") center center/cover;
+    background: url("../../img/bg2.jpg") center center/cover, url("") center center/cover;
+    z-index: 1;
 }
 
 #navbar ul {
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
 
 #navbar ul li {
     background-color: lightgrey;
-    border: 2px solid red;
+    border: 2px solid rgb(255, 102, 0);
+    border-color: linear-gradient(red, yellow);
     border-radius: 2rem;
     width: 100%;
     text-align: center;
     padding: 0.4rem 0;
+    margin: 1rem 0;
 }
 
 #navbar ul li a {
@@ -49,26 +76,78 @@ footer {
     padding: 1rem;
 }
 
-.links {
-    height: 5rem;
-    width: 8rem;
-}
-
 main {
     margin-left: 15rem;
-    padding: 1.2rem;
+    width: 85.3%;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin: .6rem;
+}
+
+main p {
+    font-size: 1.1rem;
 }
 
 #about {
-    height: 100vmin;
+    min-height: 100vh;
+    padding: 0 1.2rem;
+    background: linear-gradient(314deg, rgb(252, 74, 74), rgb(255, 206, 71), rgb(55, 236, 206));
 }
 
 #projects {
-    height: 100vmin;
+    min-height: 100vh;
+    padding: 0 1.2rem;
+    background: linear-gradient(314deg, rgb(252, 74, 74), rgb(255, 206, 71), rgb(55, 236, 206));
 }
 
 #contacts {
-    height: 50vmin;
+    min-height: 50vh;
+    padding: 0 1.2rem;
+    background: linear-gradient( 142deg, rgb(157 232 216), rgb(126 243 77), rgb(243 203 107));
+}
+
+.social-links {
+    justify-content: space-evenly;
+}
+
+.links {
+    border: 2px solid aqua;
+    height: 8rem;
+    width: 12rem;
+    margin: 0.6rem;
+}
+
+
+/* media query */
+
+@media screen and (max-width:480px) {
+    header>img {
+        min-height: 24rem;
+        width: 18rem;
+    }
+    #navbar {
+        min-height: 3vh;
+        width: 100%;
+    }
+    #navbar ul {
+        flex-direction: row;
+        align-items: center;
+    }
+    #navbar ul li {
+        width: unset;
+        margin: 0.5rem;
+        padding: 0;
+    }
+    #navbar ul li a {
+        padding: .4rem;
+    }
+    main {
+        margin-left: 0;
+        margin-top: 1vh;
+        width: 100%;
+    }
 }
 
 
@@ -81,4 +160,10 @@ main {
 
 .col {
     flex-direction: column;
+}
+
+h1,
+h2,
+header {
+    text-align: center;
 }
