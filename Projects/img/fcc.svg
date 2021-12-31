@@ -1,0 +1,14 @@
+<svg width="542" height="302" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with UXWing SVG Editor - https://uxwing.com/svg-icon-editor/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="304" width="544" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text font-style="normal" font-weight="normal" stroke="#FF0000" transform="matrix(11.314177938715906,0,0,9.813176023206603,-1705.4063081445815,-2020.6410403509046) " xml:space="preserve" text-anchor="start" font-family="'Simonetta', serif" font-size="24" id="svg_2" y="229.190317" x="160.735054" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">fcc</text>
+ </g>
+</svg>
