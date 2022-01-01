@@ -56,7 +56,7 @@ header>img {
     left: 0;
     min-height: 100vh;
     width: 15rem;
-    background: url("../img/bg2.jpg") center center/cover, url("") center center/cover;
+    background: url("../img/bg2.jpg") center center/cover;
     z-index: 1;
 }
 
@@ -69,12 +69,12 @@ header>img {
 #navbar ul li {
     background-color: lightgrey;
     border: 2px solid rgb(255, 102, 0);
-    border-color: linear-gradient(red, yellow);
     border-radius: 2rem;
     width: 100%;
     text-align: center;
     padding: 0.4rem 0;
     margin: 1rem 0;
+    box-shadow: inset -3px -4px 11px 2px #c48ac5, inset 3px 4px 5px 1px #9886f9;
 }
 
 #navbar ul li a {
@@ -122,6 +122,7 @@ main h2 {
     border: 1px solid salmon;
     border-radius: 50%;
     padding: 0.1rem 0.2rem 0.5rem 0.3rem;
+    box-shadow: inset 4px 4px 10px 4px #9886f9;
 }
 
 #projects {
@@ -132,11 +133,41 @@ main h2 {
 }
 
 #contacts {
-    min-height: 50vh;
+    min-height: 60vh;
     padding: 0 1.2rem;
     margin-left: 15rem;
-    background: linear-gradient( 142deg, rgb(157 232 216), rgb(126 243 77), rgb(243 203 107));
     justify-content: space-evenly;
+    position: relative;
+}
+
+#contacts::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/contact.jpg") center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contacts h2 {
+    padding-bottom: 0.5rem;
+    /* border-bottom-style: inset;
+    border-width: 1px; */
+    position: relative;
+}
+
+#contacts h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.9px;
+    width: 100%;
+    border-style: inset;
+    border-width: 1px;
 }
 
 .social-links {
@@ -144,27 +175,33 @@ main h2 {
 }
 
 .links {
-    height: 8rem;
-    width: 12rem;
-    margin: 0.6rem;
+    margin: 0.5rem;
+    background: linear-gradient( 20deg, #d47d7d61, #e8ec8400, #d65d5d3b);
+    border-radius: 20%;
+    box-shadow: 7px 6px 9px 3px #6e64a9;
 }
 
 .links a {
+    height: 8.4rem;
+    width: 12rem;
     text-decoration: none;
+    margin: 0.3rem;
     text-align: center;
     font-size: 1.15rem;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 
 .links a img {
     height: 6rem;
     width: 6rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #53b1de;
 }
 
 
-/* media query */
+/* media queries */
 
 @media screen and (max-width:480px) {
     header,
@@ -197,11 +234,29 @@ main h2 {
     #navbar ul li a {
         padding: .4rem;
     }
-    main {
-        width: 100%;
-    }
     main h2 {
         margin-top: 6vh;
+    }
+    #about {
+        font-size: 1.3rem;
+    }
+    #about ul {
+        margin: 1rem 2rem;
+    }
+    #about ul li {
+        padding: .35rem;
+    }
+    #about ul li::before {
+        top: 0.6rem;
+        left: -1.8rem;
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    header {
+        margin-top: 8vh;
     }
 }
 
