@@ -45,7 +45,7 @@ header::before {
     content: "";
     top: 0;
     left: 0;
-    background: url("https://raw.githubusercontent.com/Aashutosh-kr/Free_codecamp/projects/Projects/img/bg\ patterns.jpg") center center/cover, url("../img/bg\ patterns.jpg") center center/cover;
+    background: url("https://raw.githubusercontent.com/Aashutosh-kr/Free_codecamp/main/Projects/img/bg\ patterns.jpg") center center/cover, url("../img/bg\ patterns.jpg") center center/cover;
     min-height: 100vh;
     width: 100%;
     position: absolute;
@@ -69,7 +69,7 @@ header>img {
     left: 0;
     min-height: 100vh;
     width: 15rem;
-    background: url("https://raw.githubusercontent.com/Aashutosh-kr/Free_codecamp/projects/Projects/img/bg2.jpg") center center/cover, url("../img/bg2.jpg") center center/cover;
+    background: url("https://raw.githubusercontent.com/Aashutosh-kr/Free_codecamp/main/Projects/img/bg2.jpg") center center/cover, url("../img/bg2.jpg") center center/cover;
     z-index: 1;
 }
 
@@ -217,7 +217,7 @@ main article p {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url("https://raw.githubusercontent.com/Aashutosh-kr/Free_codecamp/projects/Projects/img/contact.jpg") center center/cover, url("../img/contact.jpg") center center/cover;
+    background: url("https://raw.githubusercontent.com/Aashutosh-kr/Free_codecamp/main/Projects/img/contact.jpg") center center/cover, url("../img/contact.jpg") center center/cover;
     position: absolute;
     z-index: -1;
     opacity: 0.5;
