@@ -23,7 +23,6 @@ html {
 
 header {
     min-height: 100vh;
-    margin-left: 15rem;
     padding: 1.2rem 0;
     align-items: center;
     justify-content: space-evenly;
@@ -57,6 +56,30 @@ header>img {
     min-height: 34rem;
     width: 25rem;
     border-radius: 10%;
+}
+
+
+/* hamburger */
+
+.ham {
+    position: fixed;
+    z-index: 2;
+    top: .6rem;
+    left: 0;
+    width: 15rem;
+    justify-content: space-between;
+    padding: 0 .6rem;
+}
+
+.ham img {
+    height: 1.25rem;
+    width: 1.25rem;
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    right: 0.6rem;
 }
 
 
@@ -125,8 +148,6 @@ main article p {
 #about {
     font-size: 1.5rem;
     min-height: 100vh;
-    padding: 0 1.2rem;
-    margin-left: 15rem;
     background: linear-gradient(314deg, rgb(252, 74, 74), rgb(255, 206, 71), rgb(55, 236, 206));
 }
 
@@ -164,8 +185,6 @@ main article p {
 
 #projects {
     min-height: 100vh;
-    padding: 0 1.2rem;
-    margin-left: 15rem;
     background: linear-gradient(314deg, rgb(252, 74, 74), rgb(255, 206, 71), rgb(55, 236, 206));
 }
 
@@ -205,8 +224,6 @@ main article p {
 
 #contacts {
     min-height: 60vh;
-    padding: 0 1.2rem;
-    margin-left: 15rem;
     justify-content: space-evenly;
     position: relative;
 }
@@ -304,38 +321,9 @@ main h2:hover,
 /* media queries */
 
 @media screen and (max-width:480px) {
-    header,
-    #contacts,
-    #about,
-    #projects,
-    #social-links {
-        margin-left: 0;
-    }
-    header {
-        margin-top: 3vh;
-    }
     header>img {
         min-height: 24rem;
         width: 18rem;
-    }
-    #navbar {
-        min-height: 3vh;
-        width: 100%;
-    }
-    #navbar ul {
-        flex-direction: row;
-        align-items: center;
-    }
-    #navbar ul li {
-        width: unset;
-        margin: 0.5rem;
-        padding: 0;
-    }
-    #navbar ul li a {
-        padding: .4rem;
-    }
-    main h2 {
-        margin-top: 6vh;
     }
     #about {
         font-size: 1.2rem;
@@ -364,12 +352,6 @@ main h2:hover,
     }
     .project-tile figure a img {
         width: 100%;
-    }
-}
-
-@media screen and (max-width:320px) {
-    header {
-        margin-top: 8vh;
     }
 }
 
