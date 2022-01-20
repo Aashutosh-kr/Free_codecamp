@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@300;400;500&family=Baloo+Da+2:wght@400;500;700&family=Licorice&display=swap');
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 500ms ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* variables */
+
+:root {
+    --margin: 0rem 7rem;
+    --bg-clr: #48c490f2;
+    --nav-height: 4rem;
+    --shadow-primary: 0px 1px 8px 2px grey;
+    --shadow-sec: 0px 5px 3px 1px #64c19b;
+    --radius: 2rem;
+}
+
+
+/* utility classes */
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* main css */
+
+
+/* navbar */
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: var(--nav-height);
+    width: 100%;
+    background-color: var(--bg-clr);
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow-primary);
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Licorice', cursive;
+    font-weight: 700;
+    color: tomato;
+}
+
+#nav-bar ul {
+    list-style: none;
+    width: 35%;
+    justify-content: space-evenly;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: 400;
+}
+
+
+/* header */
+
+#header {
+    min-height: 90vh;
+    position: relative;
+    margin: var(--margin);
+    padding-top: calc(var(--nav-height) + .5rem);
+}
+
+#header-img {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sec);
+}
+
+.intro-container {
+    min-height: 90vh;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: var(--shadow-primary);
+    border-radius: var(--radius);
+}
+
+.intro {
+    max-width: 55%;
+    min-height: 25%;
+    justify-content: space-evenly;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 700;
+    /* text-shadow: 1px 5px 2px slategrey; */
+}
+
+.intro h1:hover {
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sec);
+}
+
+.intro p {
+    font-size: 1.15rem;
+    text-align: justify;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: 500;
+}
+
+main {
+    margin: var(--margin);
+}
+
+#features {
+    padding-top: var(--nav-height);
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding: 0rem 0 2rem 0;
+    font-size: 1.9rem;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 500;
+}
+
+.video-section {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: .8rem 0;
+    box-shadow: var(--shadow-primary);
+    border-radius: var(--radius);
+}
+
+#video {
+    width: 60%;
+}
+
+#video:hover {
+    box-shadow: var(--shadow-primary);
+}
+
+.specs {
+    padding: 0.8rem;
+}
+
+.specs-container {
+    margin: 1rem 0;
+    justify-content: space-between;
+    box-shadow: var(--shadow-primary);
+    border-radius: var(--radius);
+}
+
+.specs-container h3 {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 500;
+}
+
+.specs-container section figure,
+.specs-container section figure img {
+    width: 30rem;
+}
+
+.specs-info {
+    margin: 0rem 4rem;
+    justify-content: center;
+}
+
+.specs-info p {
+    font-size: 1.1rem;
+    text-align: justify;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: 400;
+}
+
+
+/* contact */
+
+#contact {
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0;
+    box-shadow: var(--shadow-primary);
+    border-radius: var(--radius);
+}
+
+#contact h2 {
+    width: 15rem;
+    border-bottom: 2px solid #9a9a9a;
+}
+
+#form {
+    height: 45%;
+    width: 35%;
+    justify-content: space-evenly;
+    padding: 2rem 1.5rem;
+    box-shadow: var(--shadow-sec);
+    border-radius: var(--radius);
+}
+
+label {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 1.1rem;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 1rem;
+    height: 1.2rem;
+    font-size: .7rem;
+}
+
+input::placeholder {
+    text-align: center;
+    color: black;
+}
+
+#submit {
+    background-color: white;
+}
+
+#submit:hover {
+    border-color: var(--bg-clr);
+}
+
+
+/* media queries */
+
+@media screen and (max-width:1370px) {
+     :root {
+        --margin: 0 2.5rem;
+    }
+    main {
+        margin: var(--margin);
+    }
+    .intro-container,
+    .specs-container,
+    .specs {
+        flex-wrap: wrap;
+    }
+    .specs {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1024px) {
+     :root {
+        --margin: 0 2rem;
+    }
+    main {
+        margin: var(--margin);
+    }
+    #video {
+        width: 80%;
+    }
+    .specs-container section figure,
+    .specs-container section figure img {
+        width: 25rem;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    #contact h2 {
+        width: 91vw;
+    }
+    #form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px) {
+     :root {
+        --margin: 0.4rem;
+        --nav-height: 7rem;
+    }
+    #nav-bar ul {
+        flex-direction: column;
+    }
+    #header-img {
+        height: 14.8rem;
+        width: 12.2rem;
+    }
+    .intro {
+        max-width: 92%;
+    }
+    .intro-container {
+        flex-direction: column;
+        padding: .8rem 0;
+    }
+    main {
+        margin: var(--margin);
+    }
+    .specs-container {
+        width: 98%;
+    }
+    .specs {
+        margin: 1rem 0;
+        padding: 0.6rem 0;
+    }
+    .specs-container section figure,
+    .specs-container section figure img {
+        width: 21rem;
+    }
+    .specs-info {
+        margin: 0rem 0.8rem;
+    }
+    #form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:320px) {
+     :root {
+        --nav-height: 10rem;
+    }
+    #nav-bar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .specs-container section figure,
+    .specs-container section figure img {
+        width: 17rem;
+    }
+    #form {
+        width: 80%;
+    }
+}
