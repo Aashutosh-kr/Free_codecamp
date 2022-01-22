@@ -107,6 +107,7 @@ html {
     align-items: center;
     box-shadow: var(--shadow-primary);
     border-radius: var(--radius);
+    gap: .5rem;
 }
 
 .intro {
@@ -121,7 +122,6 @@ html {
     justify-content: center;
     font-family: 'Baloo Da 2', cursive;
     font-weight: 700;
-    /* text-shadow: 1px 5px 2px slategrey; */
 }
 
 .intro h1:hover {
@@ -302,9 +302,8 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:730px) {
      :root {
-        --margin: 0.4rem;
         --nav-height: 7rem;
     }
     #nav-bar ul {
@@ -313,6 +312,12 @@ input::placeholder {
     #header-img {
         height: 14.8rem;
         width: 12.2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+     :root {
+        --margin: 0.4rem;
     }
     .intro {
         max-width: 92%;
@@ -350,6 +355,10 @@ input::placeholder {
     #nav-bar {
         flex-direction: column;
         justify-content: center;
+    }
+    .intro h1 {
+        display: flex;
+        flex-direction: column;
     }
     .specs-container section figure,
     .specs-container section figure img {
