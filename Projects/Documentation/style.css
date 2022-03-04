@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap");
 
 /* css reset */
 
@@ -8,14 +8,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* css variables */
 
 :root {
-    --nav-width: 16rem;
-    --bg-clr: #b7a0a078;
     --top: 3rem;
-    --padding: .5rem;
+    --nav-width: 16rem;
+    --padding: 0.5rem;
+    --bg-clr: hsla(0, 14%, 67%, 0.471);
+    --code-font: "Source Code Pro", monospace;
+    --grid-columns: repeat(2, 1fr);
 }
 
 
@@ -25,8 +31,28 @@
     display: flex;
 }
 
+.content-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
 .col {
     flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.col2 {
+    grid-template-columns: var(--grid-columns);
 }
 
 .text-center {
@@ -36,40 +62,23 @@
 
 /* main document css */
 
+body {
+    grid-template-areas: "nav main";
+}
+
 abbr {
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-code {
-    background-color: var(--bg-clr);
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 500;
-}
-
-code.code-block {
-    margin: .3rem;
-}
-
-code.code-block p {
-    margin: 0 1.5rem;
-    padding: 0.35rem 1rem;
-    background-color: var(--bg-clr);
-}
-
-code.inline-code {
-    margin: 0 .15rem;
-    font-weight: 400;
-}
-
 #navbar {
-    position: fixed;
+    grid-area: nav;
+    position: sticky;
+    z-index: 10;
+    /* inset: 0; */
     top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: var(--nav-width);
     border: 2px solid aqua;
     background: var(--bg-clr);
@@ -77,8 +86,8 @@ code.inline-code {
 
 #navbar header {
     height: var(--top);
-    justify-content: center;
-    background-color: rgb(168, 224, 64);
+    border-bottom: 2px solid hsl(81deg 11% 38%);
+    background-color: hsl(81, 72%, 56%);
 }
 
 #navbar ul {
@@ -89,6 +98,7 @@ code.inline-code {
 #navbar ul li {
     width: 100%;
     padding: var(--padding);
+    border-bottom: 1px inset black;
 }
 
 #navbar ul li a {
@@ -101,15 +111,92 @@ code.inline-code {
 }
 
 main {
-    margin-left: var(--nav-width);
-    padding: 1rem 3.3rem;
+    grid-area: main;
+    max-width: 70vw;
+    padding: 0 3.3rem 1rem 3.3rem;
 }
 
 main section {
-    padding: .4rem 0;
+    padding: 0.4rem 0;
 }
 
 main section>p {
     font-family: sans-serif;
     font-size: medium;
+}
+
+#Introduction {
+    padding-top: 1rem;
+}
+
+code {
+    background-color: var(--bg-clr);
+    font-family: var(--code-font);
+    font-weight: 500;
+}
+
+.code-result {
+    gap: 2rem;
+    padding: 1rem 0 1rem 2.5rem;
+}
+
+.code-block {
+    position: relative;
+}
+
+.code-block p {
+    padding: 0.35rem 1rem;
+    background-color: var(--bg-clr);
+}
+
+.inline-code {
+    margin: 0 0.15rem;
+    font-weight: 400;
+}
+
+.result {
+    position: relative;
+    padding: 0.5rem;
+    border: 2px solid black;
+}
+
+.result.list {
+    padding-inline: 2rem;
+}
+
+.hr {
+    align-items: center;
+}
+
+.code-block::after {
+    content: "Code";
+    box-shadow: 2px 1px 2px 2px white;
+}
+
+.result::after {
+    content: "Result";
+    box-shadow: 2px 2px 2px 2px var(--bg-clr);
+}
+
+.code-block::after,
+.result::after {
+    position: absolute;
+    z-index: 10;
+    top: -0.5rem;
+    right: -0.5rem;
+    font-size: 1.2rem;
+    font-family: var(--code-font);
+    padding: 0.2rem 0.5rem;
+    border-radius: 10%;
+    background: rgb(109, 236, 236);
+}
+
+blockquote {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+     :root {
+        --grid-columns: 100%;
+    }
 }

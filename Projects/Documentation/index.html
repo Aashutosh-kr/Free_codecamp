@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Documentetion</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="grid">
     <nav id="navbar">
-        <header class="flex col">
-            <h1 class="text-center"><abbr title="Hyper Text Markup Language">HTML</abbr> Documentation</h1>
-
+        <header class="flex col content-center">
+            <h1 class="text-center">
+                <abbr title="Hyper Text Markup Language">HTML</abbr> Documentation
+            </h1>
         </header>
         <ul class="flex col">
             <li>
@@ -43,110 +44,380 @@
             <li>
                 <a href="#Extra_markups" class="nav-link">Extra markups</a>
             </li>
-
         </ul>
-    </nav>
-    <main id="main-doc">
+
         <!-- 6 The .main-section elements should contain at least 5 <code> elements total (not each). -->
         <!-- 7 The .main-section elements should contain at least 5 <li> items total (not each). -->
+    </nav>
+    <main id="main-doc">
         <section id="Introduction" class="main-section flex col">
             <header>
                 <h2>Introduction</h2>
             </header>
-            <section>
-                <p>HTML is a markup language used to write websites which we visit or see on Internet. HTML means <em>Hyper Text Markup Language.</em></p>
-            </section>
+            <hr />
+            <br />
+            <div>
+                <p>
+                    HTML is a markup language used to write websites which we visit or see on Internet. HTML means <em>Hyper Text Markup Language.</em>
+                </p>
+            </div>
         </section>
         <section id="Structure" class="main-section flex col">
             <header>
                 <h2>Structure</h2>
             </header>
-            <section>
+            <hr />
+            <br />
+            <div>
                 <p>The HTML document has a general Structure like this :-</p>
-                <code class="code-block">
-                    <p>&lt;html&gt;</p>
-                    <p>&lt;head&gt;</p>
-                    <p>&lt;title&gt;Title of Document&lt;/title&gt;</p>
-                    <p>&lt;/head&gt;</p>
-                    <p>&lt;body&gt;</p>
-                    <p>&lt;h1&gt;This is main heading.&lt;/h1&gt;</p>
-                    <p>&lt;p&gt;This is some paragraph of content of the website.&lt;/p&gt;</p>
-                    <p>&lt;h2&gt;This is sub-heading for the main document.&lt;/h2&gt;</p>
-                    <p>&lt;p&gt;This is another paragraph of content.&lt;/p&gt;</p>
-                    <p>&lt;/body&gt;</p>
-                    <p>&lt;/html&gt;</p>
-                </code>
-                <p>In which the <code class="inline-code">&lt;html&gt;</code><code class="inline-code">&lt;/html&gt;</code> tags is the container tag which contains all other elements of the document.
+                <div class="code-result grid col2">
+                    <code class="code-block">
+              <p>&lt;html&gt;</p>
+              <p>&lt;head&gt;</p>
+              <p>&lt;title&gt;Title of Document&lt;/title&gt;</p>
+              <p>&lt;/head&gt;</p>
+              <p>&lt;body&gt;</p>
+              <p>&lt;h1&gt;This is main heading.&lt;/h1&gt;</p>
+              <p>
+                &lt;p&gt;This is some paragraph of content of the
+                website.&lt;/p&gt;
+              </p>
+              <p>
+                &lt;h2&gt;This is sub-heading for the main document.&lt;/h2&gt;
+              </p>
+              <p>&lt;p&gt;This is another paragraph of content.&lt;/p&gt;</p>
+              <p>&lt;/body&gt;</p>
+              <p>&lt;/html&gt;</p>
+            </code>
+                    <div class="result">
+                        <p>Title of Document X |</p>
+                        <hr />
+                        <br />
+                        <h1>This is main heading.</h1>
+                        <p>This is some paragraph of content of the website.</p>
+                        <h2>This is sub-heading for the main document.</h2>
+                        <p>This is another paragraph of content.</p>
+                    </div>
+                </div>
+                <p>
+                    In which the <code class="inline-code">&lt;html&gt;</code>
+                    <code class="inline-code">&lt;/html&gt;</code> tags is the container tag which contains all other elements of the document.
                 </p>
-                <p>The HTML element contains <code class="inline-code">&lt;head&gt;</code> <code class="inline-code">&lt;/head&gt;</code> tags, which is not displayed in the browser's window. The HEAD element contains the metadata of the HTML document. It
-                    also contains a TITLE element which contains the title of the document, which is displayed on the top of the browser's window or the tab of the browser if the browser supports multitab functionality.</p>
-                <p>Next is the BODY element which contains all the other elements of HTML document. All the contents which we see in the browser's window is contained within the BODY element.</p>
-                <p>The elements contained in the BODY element are discussed in the subsequent sections.</p>
-            </section>
-
+                <p>
+                    The <code>&lt;HTML&gt;</code> element contains
+                    <code class="inline-code">&lt;head&gt;</code>
+                    <code class="inline-code">&lt;/head&gt;</code> tags, which is not displayed in the browser's window. The <code>&lt;HEAD&gt;</code> element contains the metadata of the HTML document. It also contains a <code>&lt;TITLE&gt;</code> element
+                    which contains the title of the document, which is displayed on the top of the browser's window or the tab of the browser if the browser supports multitab functionality.
+                </p>
+                <p>
+                    Next is the <code>&lt;BODY&gt;</code> element which contains all the other elements of HTML document. All the contents which we see in the browser's window is contained within the BODY element.
+                </p>
+                <p>
+                    The elements contained in the <code>&lt;BODY&gt;</code> element are discussed in the subsequent sections.
+                </p>
+            </div>
         </section>
         <section id="Text" class="main-section flex col">
             <header>
                 <h2>Text</h2>
             </header>
-            <section>
-                <p>We can use different </p>
-            </section>
-
+            <hr />
+            <br />
+            <div>
+                <p>
+                    We can use different levels of headings, font sizes, font families and also different formatting with the texts.
+                </p>
+                <br />
+                <h3>Headings</h3>
+                <br />
+                <p>
+                    We can use six different levels of Headings in HTML. Starting with
+                    <code class="inline-code"> &lt;h1&gt;</code> to
+                    <code class="inline-code"> &lt;h6&gt;</code> The subsequent headings are rendered from larger to smaller in browsers by default. The
+                    <code class="inline-code"> &lt;h1&gt;</code> being the largest and the <code class="inline-code"> &lt;h6&gt;</code> smallest.
+                </p>
+                <br />
+                <p>All the heading elements are following.</p>
+                <div class="code-result grid col2">
+                    <code class="code-block">
+              <p>&lt;h1&gt;This is Main heading&lt;/h1&gt;</p>
+              <p>&lt;h2&gt;This is Level 2 heading&lt;/h2&gt;</p>
+              <p>&lt;h3&gt;This is Level 3 heading&lt;/h3&gt;</p>
+              <p>&lt;h4&gt;This is Level 4 heading&lt;/h4&gt;</p>
+              <p>&lt;h5&gt;This is Level 5 heading&lt;/h5&gt;</p>
+              <p>&lt;h6&gt;This is Level 6 heading&lt;/h6&gt;</p>
+            </code>
+                    <div class="result flex col space-evenly">
+                        <h1>This is Main heading</h1>
+                        <h2>This is Level 2 heading</h2>
+                        <h3>This is Level 3 heading</h3>
+                        <h4>This is Level 4 heading</h4>
+                        <h5>This is Level 5 heading</h5>
+                        <h6>This is Level 6 heading</h6>
+                    </div>
+                </div>
+                <br />
+                <h3>Paragraphs</h3>
+                <br />
+                <p>
+                    We can also write pragraphs by using
+                    <code class="inline-code"> &lt;p&gt;</code>
+                    <code class="inline-code"> &lt;/p&gt;</code> tags.
+                </p>
+                <p>
+                    By default the different paragraphs are shown in new line by the browsers.
+                </p>
+                <p>
+                    We can format the text differently by using different HTML tags as follows.
+                </p>
+                <div>
+                    <h3>Text Formattings</h3>
+                    <ul class="flex col space-between">
+                        <li>
+                            Bold - By using
+                            <code class="inline-code"> &lt;b&gt;</code>
+                            <code class="inline-code"> &lt;/b&gt;</code> tags.
+                        </li>
+                        <li>
+                            Italic - By using
+                            <code class="inline-code"> &lt;i&gt;</code>
+                            <code class="inline-code"> &lt;/i&gt;</code> tags.
+                        </li>
+                        <li>
+                            Superscript - By using
+                            <code class="inline-code"> &lt;sup&gt;</code>
+                            <code class="inline-code"> &lt;/sup&gt;</code> tags.
+                        </li>
+                        <li>
+                            Subscript - By using
+                            <code class="inline-code"> &lt;sub&gt;</code>
+                            <code class="inline-code"> &lt;/sub&gt;</code> tags.
+                        </li>
+                        <li>
+                            Line breaks - by using
+                            <code class="inline-code"> &lt;br /&gt; </code> tag.
+                        </li>
+                        <li>
+                            Horizontal line - by using
+                            <code class="inline-code"> &lt;hr /&gt;</code> tag.
+                        </li>
+                        <li>
+                            Strong text - by using
+                            <code class="inline-code"> &lt;strong&gt;</code>
+                            <code class="inline-code"> &lt;/strong&gt;</code> tags.
+                        </li>
+                        <li>
+                            Emphasis text - by using
+                            <code class="inline-code"> &lt;em&gt;</code>
+                            <code class="inline-code"> &lt;/em&gt;</code> tags.
+                        </li>
+                        <li>
+                            Block quote of texts - by using
+                            <code class="inline-code"> &lt;blockquote&gt;</code>
+                            <code class="inline-code"> &lt;blockquote&gt;</code> tags.
+                        </li>
+                        <li>
+                            Inline quote - by using
+                            <code class="inline-code"> &lt;q&gt;</code>
+                            <code class="inline-code"> &lt;/q&gt;</code> tags.
+                        </li>
+                        <li>
+                            Abbreviations or Accronym - by using
+                            <code class="inline-code"> &lt;abbr&gt;</code>
+                            <code class="inline-code"> &lt;/abbr&gt;</code> tags and title attribute for its full fom.
+                            <p>Hover over HTML in result to see its full form.</p>
+                        </li>
+                        <li>
+                            Insertion of text - by using
+                            <code class="inline-code"> &lt;ins&gt;</code>
+                            <code class="inline-code"> &lt;/ins&gt;</code> tags. Deletion of text - by using
+                            <code class="inline-code"> &lt;del&gt;</code>
+                            <code class="inline-code"> &lt;/del&gt;</code> tags.
+                        </li>
+                        <li>
+                            No longer relevence - by using
+                            <code class="inline-code"> &lt;s&gt;</code>
+                            <code class="inline-code"> &lt;/s&gt;</code> tags.
+                        </li>
+                    </ul>
+                    <div class="code-result grid col2">
+                        <code class="code-block">
+                <p>I am &lt;b&gt;Bold&lt;/b&gt;.</p>
+                <p>I am &lt;i&gt;Italic&lt;/i&gt;.</p>
+                <p>O &lt;sup&gt;2&lt;/sup&gt;</p>
+                <p>ln &lt;sub&gt;2&lt;/sub&gt;</p>
+                <p>line&lt;br /&gt;break</p>
+                <p class="hr flex">Horizontal &lt;hr /&gt; line</p>
+                <p>I am &lt;strong&gt;strong&lt;/strong&gt;.</p>
+                <p>I am &lt;em&gt;emphasisized&lt;/em&gt;.</p>
+                <p>&lt;blockquote&gt;&lt;p&gt;This is a blockquote.&lt;/p&gt;&lt;/blockquote&gt;</p>
+                <p>This is a &lt;q&gt;quote&lt;/q&gt;.</p>
+                <p>&lt;abbr title="Hyper Text Markup Language"&gt;HTML&lt;/abbr&gt;</p>
+                <p>His perfomance in test is &lt;del&gt;excellent&lt;/del&gt; &lt;ins&gt;amazing&lt;/ins&gt;.</p>
+                <p>The price of this book &lt;s&gt;was &#8377;1000&lt;/s&gt;. Now only in &#8377; 699.</p>
+              </code>
+                        <div class="result">
+                            <p>I am <b>Bold</b>.</p>
+                            <p>I am <i>Italic</i>.</p>
+                            <p>O <sup>2</sup></p>
+                            <p>ln <sub>2</sub></p>
+                            <p>line<br />break</p>
+                            <p class="hr flex">
+                                Horizontal
+                                <hr /> line
+                            </p>
+                            <p>I am <strong>strong</strong>.</p>
+                            <p>I am <em>emphasisized</em>.</p>
+                            <blockquote>
+                                <p>This is a blockquote.</p>
+                            </blockquote>
+                            <p>This is a <q>quote</q>.</p>
+                            <p><abbr title="Hyper Text Markup Language">HTML</abbr>(Hover over me to see my full form.)</p>
+                            <p>His perfomance in test is <del>excellent</del> <ins>amazing</ins>.</p>
+                            <p>The price of this book <s>was &#8377;1000</s>. Now only in &#8377; 699.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
         <section id="Lists" class="main-section flex col">
             <header>
                 <h2>Lists</h2>
             </header>
-            <section>
-
-            </section>
-
+            <hr />
+            <br />
+            <div>
+                <p>We can use Three different types lists in HTML according to our needs.</p>
+                <p>
+                    Each list items in an Ordered or Unordered list must contain <code class="inline-code">&lt;li&gt;</code>
+                    <code class="inline-code">&lt;/li&gt;</code> tags.
+                </p>
+                <ol>
+                    <br>
+                    <li>
+                        <h3>Ordered Lists</h3>
+                        <p>Ordered lists are created with the ol element.</p>
+                        <div class="code-result grid col2">
+                            <code class="code-block">
+                                <p>&lt;p&gt;To &lt;/p&gt;</p>
+                                <p>&lt;ol&gt;</p>
+                                <p>&lt;li&gt;Lorem, ipsum.&lt;/li&gt;</p>
+                                <p>&lt;li&gt;Lorem, ipsum.&lt;/li&gt;</p>
+                                <p>&lt;li&gt;Lorem, ipsum.&lt;/li&gt;</p>
+                                <p>&lt;li&gt;Lorem, ipsum.&lt;/li&gt;</p>
+                                <p>&lt;li&gt;Lorem, ipsum.&lt;/li&gt;</p>
+                                <p>&lt;ol/&gt;</p>
+                            </code>
+                            <div class="result list">
+                                <p>To </p>
+                                <ol>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <h3>Unordered Lists</h3>
+                        <p>Unordered lists are created with the ul element.</p>
+                        <div class="code-result grid col2">
+                            <code class="code-block">
+                                <p>&lt;p&gt;Fruits&lt;/p&gt;</p>
+                                <p>&lt;ul&gt;</p>
+                                <p>&lt;li&gt;Mango&lt;/li&gt;</p>
+                                <p>&lt;li&gt;Pineapple&lt;/li&gt;</p>
+                                <p>&lt;li&gt;Grapes&lt;/li&gt;</p>
+                                <p>&lt;li&gt;Kiwi&lt;/li&gt;</p>
+                                <p>&lt;li&gt;Oranges&lt;/li&gt;</p>
+                                <p>&lt;ul/&gt;</p>
+                            </code>
+                            <div class="result list">
+                                <p>Fruits</p>
+                                <ul>
+                                    <li>Mango</li>
+                                    <li>Pineapple</li>
+                                    <li>Grapes</li>
+                                    <li>Kiwi</li>
+                                    <li>Oranges</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <h3>Definition Lists</h3>
+                        <p>Definition lists are created with the dl element. Inside the <code>&lt;dl&gt;</code> element we use the <code class="inline-code">&lt;dt&gt;</code>
+                            <code class="inline-code">&lt;/dt&gt;</code> and <code class="inline-code">&lt;dd&gt;</code>
+                            <code class="inline-code">&lt;/dd&gt;</code> tags to write the Definition term and the Definition of the term respectively.</p>
+                        <div class="code-result grid col2">
+                            <code class="code-block">
+                                <p>&lt;dl&gt;</p>
+                                <p>&lt;dt&gt;Lorem, ipsum.&lt;/dt&gt;</p>
+                                <p>&lt;dd&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eaque!&lt;/dd&gt;</p>
+                                <p>&lt;dt&gt;Lorem, ipsum.&lt;/dt&gt;</p>
+                                <p>&lt;dd&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eaque!&lt;/dd&gt;</p>
+                                <p>&lt;dl/&gt;</p>
+                            </code>
+                            <div class="result">
+                                <dl>
+                                    <dt>Lorem, ipsum.</dt>
+                                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eaque!</dd>
+                                    <dt>Lorem, ipsum.</dt>
+                                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eaque!</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
         </section>
         <section id="Links" class="main-section flex col">
             <header>
                 <h2>Links</h2>
             </header>
-            <section>
+            <hr />
+            <br />
+            <div>
+                <p>Links are created in an HTML document by using <code>&lt;a&gt;</code> element.</p>
 
-            </section>
-
+            </div>
         </section>
         <section id="Images" class="main-section flex col">
             <header>
                 <h2>Images</h2>
             </header>
-            <section>
-
-            </section>
-
+            <hr />
+            <br />
+            <div></div>
         </section>
         <section id="Tables" class="main-section flex col">
             <header>
                 <h2>Tables</h2>
             </header>
-            <section>
-
-            </section>
-
+            <hr />
+            <br />
+            <div></div>
         </section>
         <section id="Forms" class="main-section flex col">
             <header>
                 <h2>Forms</h2>
             </header>
-            <section>
-
-            </section>
-
+            <hr />
+            <br />
+            <div></div>
         </section>
         <section id="Extra_markups" class="main-section flex col">
             <header>
                 <h2>Extra Markups</h2>
             </header>
-            <section>
-
-            </section>
-
+            <hr />
+            <br />
+            <div></div>
         </section>
     </main>
 
